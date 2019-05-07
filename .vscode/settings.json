@@ -1,0 +1,24 @@
+{
+    "cSpell.words": [
+        "Arial",
+        "Goncharenko",
+        "Vitaly",
+        "Zeit",
+        "esnext",
+        "nextjs",
+        "unfetch"
+    ],
+    "eslint.autoFixOnSave": true,
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        {
+            "language": "typescript",
+            "autoFix": true
+        },
+        {
+            "language": "typescriptreact",
+            "autoFix": true
+        }
+    ],
+}

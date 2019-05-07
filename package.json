@@ -1,0 +1,38 @@
+{
+  "name": "hello-next-typescript",
+  "version": "0.0.1",
+  "description": "NextJS example on TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "now-build": "next build",
+    "start": "next start -p $PORT"
+  },
+  "keywords": ["nextjs", "typescript"],
+  "author": "Vitaly Goncharenko",
+  "license": "MIT",
+  "dependencies": {
+    "@types/next": "^8.0.5",
+    "@types/react": "^16.8.16",
+    "@types/react-dom": "^16.8.4",
+    "@zeit/next-typescript": "^1.1.1",
+    "express": "^4.16.4",
+    "isomorphic-unfetch": "^3.0.0",
+    "next": "^8.1.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-markdown": "^4.0.8"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-decorators": "^7.4.4",
+    "@typescript-eslint/eslint-plugin": "^1.7.0",
+    "@typescript-eslint/parser": "^1.7.0",
+    "eslint": "^5.16.0",
+    "eslint-config-prettier": "^4.2.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-react": "^7.13.0",
+    "prettier": "^1.17.0",
+    "typescript": "^3.4.5"
+  }
+}
