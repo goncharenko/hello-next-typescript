@@ -1,4 +1,6 @@
 import React, { ReactNode } from 'react';
+import { NextStatelessComponent } from 'next';
+
 import Header from './Header';
 
 const layoutStyle = {

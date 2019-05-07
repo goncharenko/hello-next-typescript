@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { NextStatelessComponent } from 'next';
 import { withRouter } from 'next/router';
 import Markdown from 'react-markdown';
 

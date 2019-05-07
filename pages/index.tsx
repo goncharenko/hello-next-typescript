@@ -5,7 +5,7 @@ import Link from 'next/link';
 import Layout from '../components/MyLayout';
 
 interface Post {
-    id: number;
+    id: string;
     title: string;
 }
 
@@ -41,13 +41,13 @@ const Blog: NextStatelessComponent<BlogProps> = ({ posts }) => {
 };
 
 Blog.getInitialProps = async () => {
-    const posts = [
+    const posts: Post[] = [
         { id: 'hello-nextjs', title: 'Hello Next.js' },
         { id: 'learn-nextjs', title: 'Learn Next.js is awesome' },
         { id: 'deploy-nextjs', title: 'Deploy apps with ZEIT' },
     ];
 
-    return { posts };
+    return { posts: posts };
 };
 
 export default Blog;
