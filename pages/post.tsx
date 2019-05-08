@@ -1,22 +1,15 @@
 import React from 'react';
 import { NextStatelessComponent } from 'next';
-import { withRouter } from 'next/router';
+import { useRouter } from 'next/router';
 import Markdown from 'react-markdown';
 
 import Layout from '../components/MyLayout';
 
-interface PostProps {
-    router: {
-        query: {
-            title: string;
-        };
-    };
-}
-
-const Post: NextStatelessComponent<PostProps> = ({ router }: PostProps) => {
+const Post: NextStatelessComponent = () => {
+    const { query } = useRouter();
     return (
         <Layout>
-            <h1>{router.query.title}</h1>
+            <h1>{query.title}</h1>
             <div className="markdown">
                 <Markdown
                     source={`
@@ -31,4 +24,4 @@ const Post: NextStatelessComponent<PostProps> = ({ router }: PostProps) => {
     );
 };
 
-export default withRouter(Post);
+export default Post;
