@@ -1,5 +1,5 @@
 # Hello Next TypeScript
-NextJS example on TypeScript
+[NextJS](https://nextjs.org) example on TypeScript
 
 You can run it with:
 
