@@ -7,6 +7,7 @@ import Layout from '../components/MyLayout';
 
 const Post: NextStatelessComponent = () => {
     const { query } = useRouter();
+
     return (
         <Layout>
             <h1>{query.title}</h1>
@@ -20,6 +21,26 @@ const Post: NextStatelessComponent = () => {
  And here's the content.`}
                 />
             </div>
+            <style jsx global>{`
+                .markdown {
+                    font-family: 'Arial';
+                }
+
+                .markdown a {
+                    text-decoration: none;
+                    color: blue;
+                }
+
+                .markdown a:hover {
+                    opacity: 0.6;
+                }
+
+                .markdown h3 {
+                    margin: 0;
+                    padding: 0;
+                    text-transform: uppercase;
+                }
+            `}</style>
         </Layout>
     );
 };
