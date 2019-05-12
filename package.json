@@ -4,10 +4,10 @@
   "description": "NextJS example on TypeScript",
   "main": "index.js",
   "scripts": {
-    "dev": "next",
+    "dev": "node server.js",
     "build": "next build",
-    "now-build": "next build",
-    "start": "next start -p $PORT"
+    "start": "NODE_ENV=production node server.js",
+    "now-build": "next build"
   },
   "keywords": [
     "nextjs",
