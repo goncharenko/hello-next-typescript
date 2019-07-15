@@ -1,11 +1,10 @@
 import React from 'react';
-import { NextStatelessComponent } from 'next';
 import { useRouter } from 'next/router';
 import Markdown from 'react-markdown';
 
 import Layout from '../components/MyLayout';
 
-const Post: NextStatelessComponent = () => {
+const Post: React.FunctionComponent = () => {
     const { query } = useRouter();
 
     return (

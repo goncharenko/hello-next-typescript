@@ -1,5 +1,4 @@
 import React, { ReactNode } from 'react';
-import { NextStatelessComponent } from 'next';
 
 import Header from './Header';
 
@@ -13,7 +12,7 @@ interface LayoutProps {
     children: ReactNode;
 }
 
-const Layout: NextStatelessComponent<LayoutProps> = ({ children }) => {
+const Layout: React.FunctionComponent<LayoutProps> = ({ children }) => {
     return (
         <div style={layoutStyle}>
             <Header />

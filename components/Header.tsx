@@ -1,12 +1,11 @@
 import React from 'react';
 import Link from 'next/link';
-import { NextStatelessComponent } from 'next';
 
 const linkStyle = {
     marginRight: 15,
 };
 
-const Header: NextStatelessComponent = () => {
+const Header: React.FunctionComponent = () => {
     return (
         <div>
             <Link href="/">

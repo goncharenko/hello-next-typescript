@@ -1,9 +1,8 @@
 import React from 'react';
-import { NextStatelessComponent } from 'next';
 
 import Layout from '../components/MyLayout';
 
-const About: NextStatelessComponent = () => {
+const About: React.FunctionComponent = () => {
     return (
         <Layout>
             <p>This is the about page</p>

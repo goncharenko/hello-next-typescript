@@ -4,10 +4,10 @@
   "description": "NextJS example on TypeScript",
   "main": "index.js",
   "scripts": {
-    "dev": "node server.js",
+    "dev": "next",
     "build": "next build",
-    "start": "NODE_ENV=production node server.js",
-    "now-build": "next build"
+    "start": "next start",
+    "type-check": "tsc"
   },
   "keywords": [
     "nextjs",
@@ -16,27 +16,23 @@
   "author": "Vitaly Goncharenko",
   "license": "MIT",
   "dependencies": {
-    "@types/next": "^8.0.5",
-    "@types/react": "^16.8.22",
-    "@types/react-dom": "^16.8.4",
-    "@zeit/next-typescript": "^1.1.1",
-    "express": "^4.17.1",
-    "isomorphic-unfetch": "^3.0.0",
-    "next": "^8.1.0",
+    "next": "^9.0.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-markdown": "^4.1.0"
   },
   "devDependencies": {
-    "@babel/plugin-proposal-decorators": "^7.4.4",
+    "@types/next": "^8.0.6",
+    "@types/react": "^16.8.23",
+    "@types/react-dom": "^16.8.4",
     "@types/styled-jsx": "^2.2.8",
-    "@typescript-eslint/eslint-plugin": "^1.11.0",
-    "@typescript-eslint/parser": "^1.11.0",
+    "@typescript-eslint/eslint-plugin": "^1.12.0",
+    "@typescript-eslint/parser": "^1.12.0",
     "eslint": "^6.0.1",
     "eslint-config-prettier": "^6.0.0",
     "eslint-plugin-prettier": "^3.1.0",
     "eslint-plugin-react": "^7.14.2",
     "prettier": "^1.18.2",
-    "typescript": "^3.5.2"
+    "typescript": "^3.5.3"
   }
 }
